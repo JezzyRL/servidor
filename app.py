@@ -29,7 +29,7 @@ def getTempertura():
         t4 = 4*(grados - 491.67)/9
     elif(umedida=="reaumur"):
         t1 = (5*grados)/4
-        t2 = (grados+ 2.25) + 32
+        t2 = ((grados * 9) / 4) + 32
         t3 = ((5 * grados) /4) + 273.15
         t4 = (grados *2.25) + 491.67
 
