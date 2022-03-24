@@ -7,7 +7,7 @@ app = Flask(__name__)
 def getTempertura():
     umedida = request.args.get('umedida')
     grados = float(request.args.get('grados'))
-    if(umedida=="celcius"):
+    if(umedida=="celsius"):
         t1 = (grados*1.8)+32
         t2 = (grados + 273.15)
         t3 = ((grados * 9/5) + 491.67) 
